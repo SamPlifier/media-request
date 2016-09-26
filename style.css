@@ -1,0 +1,283 @@
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    width: 25%;
+    list-style-type: none;
+    padding: 0.3em;
+    float: left;
+}
+
+section {
+    position: relative;
+    width: 1105%;
+    top: 210px;
+    right: 79px;
+}
+
+li {
+    font-family: sans-serif;
+}
+
+#pink-shirt-container, #blue-shirt-container, #mustard-shirt-container {
+    color: #5ca4d6;
+    margin: 0 10px 0 10px;
+    width: 9.5rem;
+}
+
+.pop-up {
+    opacity: 0;
+    width: 2.36em;
+    position: absolute;
+    padding: 10px 0 0 0;
+    height: 130px;
+    display: inline;
+    top: -8.65rem;
+    left: 4.16em;
+    background-color: white;
+    border: 2px solid #5ca4d6;
+    transition: all 1s ease;
+    visibility: hidden;
+}
+
+li.size-item:hover .pop-up {
+    opacity: 1;
+    transform: translateY(1rem);
+    color: #5ca4d6;
+    visibility: visible;
+}
+
+.pop-up li {
+    width: 52px;
+}
+
+.color-item {
+    opacity: 0;
+    display: inline-block;
+    position: absolute;
+    width: 2.5em;
+    height: 2.5em;
+    bottom: 2.65rem;
+    right: 3rem;
+    background-color: white;
+    border: 2px solid #5ca4d6;
+    transition: all 1s ease;
+    padding: 0.3em;
+    visibility: hidden;
+}
+
+.square-item:hover .grid-pop-up {
+    opacity: 1;
+    transform: translateY(1rem);
+    visibility: visible;
+}
+
+.color-item li:nth-child(1) {
+    float: left;
+    margin: 2px;
+    height: 16px;
+    width: 16px;
+    background-color: #5ca4d6;
+}
+
+.color-item li:nth-child(2) {
+    float: left;
+    margin: 2px;
+    height: 16px;
+    width: 16px;
+    background-color: #d583ac;
+}
+
+.color-item li:nth-child(3) {
+    float: left;
+    margin: 2px;
+    height: 16px;
+    width: 16px;
+    background-color: #deb17e;
+}
+
+.color-item li:nth-child(4) {
+    float: left;
+    margin: 2px;
+    height: 16px;
+    width: 16px;
+    background-color: #8bb992;
+}
+
+.shirt-w-undo {
+    position: relative;
+}
+
+ul.shirt-name-price {
+    width: 160%;
+}
+
+li img {
+    border: 2px solid;
+    padding: 1em;
+    width: 15em;
+}
+
+#blue-undo, #pink-undo, #mustard-undo {
+    position: absolute;
+    top: .3em;
+    right: -3.8em;
+    font-size: 1.5em;
+    color: #5ca4d6;
+}
+
+#blue-undo:active, #pink-undo:active, #mustard-undo:active {
+    background-color: #5ca4d6;
+    color: white;
+}
+
+i.fa.fa-undo::before {
+    border-left: 2px solid #5ca4d6;
+    border-bottom: 2px solid #5ca4d6;
+}
+
+.fa {
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.fa-exchange:before {
+    content: "\f0ec";
+    vertical-align: -webkit-baseline-middle;
+}
+
+.fa-heart-o:before {
+    content: "\f08a";
+    vertical-align: -webkit-baseline-middle;
+}
+
+.fa-square:before {
+    content: "\f0c8";
+    vertical-align: -webkit-baseline-middle;
+}
+
+.fa-shopping-cart:before {
+    content: "\f07a";
+    vertical-align: -webkit-baseline-middle;
+}
+
+span {
+    vertical-align: -webkit-baseline-middle;
+    line-height: 1em;
+}
+
+section div ul li {
+    float: left;
+    width: 83px;
+    height: 45px;
+}
+
+.price {
+    float: right;
+    font-size: 23px;
+}
+
+.shirt-name {
+    font-size: 23px;
+    float: left;
+}
+
+li.icon-li {
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    width: 20%;
+    height: 1.8em;
+    float: left;
+}
+
+li.icon-li:hover, #blue-undo:hover, #pink-undo:hover, #mustard-undo:hover {
+    cursor: pointer;
+}
+
+.blue-footer, .pink-footer, .mustard-footer {
+    color: #5ca4d6;
+}
+
+li.icon-li-border {
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    border-left: 2px solid;
+}
+
+section div ul li:nth-child(2), section div ul li:nth-child(3), section div ul li:nth-child(4), section div ul li:nth-child(5) {
+    border-left: 0px;
+}
+
+li.icon-li.rm-border-left.shopping-cart {
+    border-right: 2px solid;
+}
+
+#pink-sq {
+    color: #d583ac;
+}
+
+#mustard-sq {
+    color: #deb17e;
+}
+
+div.top-container {
+    width: 97%;
+    margin: 0 auto;
+}
+
+ul.borders-blue {
+    margin: 0;
+    position: relative;
+    width: 10.6em;
+    height: 1.4em;
+    text-align: center;
+    font-size: 1.5em;
+    top: -0.7em;
+    left: -1.5%;
+}
+
+ul .icon-li:nth-child(n+1):hover {
+    background-color: #5ca4d6;
+    border-color: #5ca4d6;
+    color: white;
+}
+
+@media (max-width:1150px) {
+    ul {
+        width: 33%;
+        list-style-type: none;
+        padding: 0.3em;
+        float: left;
+    }
+    ul.borders-blue {
+        margin: 0;
+        position: relative;
+        width: 10.6em;
+        height: 1.4em;
+        text-align: center;
+        font-size: 1.5em;
+        top: -0.7em;
+        left: -1.5%;
+    }
+}
+
+@media (max-width:850px) {
+    ul {
+        width: 50%;
+    }
+    div.top-container {
+      width: 85%;
+    }
+    ul.borders-blue {
+        margin: 0;
+        position: relative;
+        width: 10.6em;
+        height: 1.4em;
+        text-align: center;
+        font-size: 1.5em;
+        top: -0.7em;
+        left: -1.5%;
+    }
+}
